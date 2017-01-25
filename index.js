@@ -32,7 +32,7 @@ router(app)
 
 
 //server setup
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 5000
 
 //create HTTP server and forward it to our express application
 const server = http.createServer(app)
