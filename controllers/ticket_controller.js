@@ -1,13 +1,14 @@
 const Ticket = require('../models/ticket')
 
 exports.createTicket = function(req, res, next){
-    const { title , categories, content } = req.body
+    const { title , categories, content, imageUrl } = req.body
 
 
         const ticket = new Ticket({
            title: title,
            categories: categories,
-           content: content
+           content: content,
+           imageUrl: imageUrl
         })
 
         ticket.save(function(err, ticket){

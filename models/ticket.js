@@ -5,7 +5,8 @@ const ticketSchema = new Schema({
     title : String ,
     categories: String,
     content: String,
-    user: {type: Schema.Types.ObjectId, ref: 'User'}
+    user: {type: Schema.Types.ObjectId, ref: 'User'},
+    imageUrl: String
 })
 
 
